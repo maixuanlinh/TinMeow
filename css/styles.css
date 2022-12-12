@@ -10,8 +10,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+  
   color: #8f8f8f;
 }
+
 
 /* Headings */
 
@@ -28,7 +30,7 @@ p {
 
 /* Containers */
 
-.container-fluid{
+.container-fluid {
   padding: 7% 15%;
 }
 
@@ -163,6 +165,7 @@ p {
 /* Footer Section */
 
 
+
 .social-icon {
   margin: 20px 10px;
 }
@@ -177,4 +180,33 @@ p {
     position: static;
     transform: rotate(0);
   }
+}
+
+a .social-icon:hover {
+  color: #ff4c68;
+}
+
+/* Type writer effect */
+.typewriter {
+  overflow: hidden; 
+  border-right: .15em solid #ff4c68; 
+  
+
+  margin: 0 auto; 
+ 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
